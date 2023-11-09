@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 20px;
   h1 {
     margin-bottom: 2rem;
   }
@@ -21,6 +21,7 @@ export const HeaderTextContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 50%;
+  color: #7aa399;
   h1 {
     margin: 10px 0;
     font-size: 4rem;
@@ -44,7 +45,6 @@ export const HeaderImageContainter = styled.div`
   width: 40%;
   img {
     width: 100%;
-    padding-bottom: 75%;
   }
   @media (max-width: 1000px) {
     display: none;

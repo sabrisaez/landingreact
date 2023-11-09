@@ -6,7 +6,9 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin: 0;
   @media (max-width: 768px) {
     padding: 1rem 2rem;
   }
@@ -24,7 +26,7 @@ export const LinksContainer = styled.div`
   a {
     padding: 1rem 1.5rem;
     &:first-child {
-      background: var(--orange-bg);
+      background: #7aa399;
       border-radius: 1rem;
       display: flex;
       justify-content: center;
@@ -35,7 +37,7 @@ export const LinksContainer = styled.div`
 `;
 export const LinkContainer = styled.div`
   font-size: 1.2rem;
-  color: ${(props) => (props.home ? "#ff9d01" : "ff9300")};
+  color: ${(props) => (props.home ? "#white" : "ff9300")};
 `;
 
 export const UserContainer = styled.div`

@@ -5,10 +5,10 @@ export const StyledButton = styled.div`
   outline: none;
   border: none;
   border-radius: ${({ radius }) => `${radius}px`};
-  background: var(--btn-gradient);
+  background: #aec6e9;
   color: white;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   &:hover {
     opacity: 95%;

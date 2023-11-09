@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
     margin: 0;
     padding: 0;
-    background: #131415;
+    background: white;
     font-family: 'Montserrat', sans-serif;
     color: white;
     -webkit-tap-highlight-color: transparent;

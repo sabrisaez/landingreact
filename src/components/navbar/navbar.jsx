@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaHome, FaUser } from "react-icons/fa";
+import { FaHome, FaUser, FaHeart } from "react-icons/fa";
 import {
   HomeContainer,
   LinkContainer,
   LinksContainer,
+  MenuContainer,
   NavbarContainer,
   SpanStyled,
   UserContainer,
@@ -22,12 +23,14 @@ export const Navbar = () => {
         </a>
       </div>
       <LinksContainer>
+        <MenuContainer>
+          <FaHeart />
+        </MenuContainer>
         <HomeContainer>
           <motion.div whileTap={{ scale: 0.97 }}>
             <a href="/#">
-              <LinkContainer home={true}>
-                <FaHome />
-              </LinkContainer>
+              <LinkContainer home={true}></LinkContainer>
+              <FaHome />
               Home
             </a>
           </motion.div>
