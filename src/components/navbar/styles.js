@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
   height: 100px;
-  background-color: #18191a;
+  background-color: #aee9d1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
   @media (max-width: 768px) {
     padding: 1rem 2rem;
+  }
+  img {
+    width: 100px;
   }
 `;
 

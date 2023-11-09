@@ -15,7 +15,10 @@ export const Navbar = () => {
     <NavbarContainer>
       <div>
         <a href="/#">
-          <img src="./src/assets/pokeball-logo.gif" alt="Logo" />
+          <img
+            src="https://i.pinimg.com/originals/1d/a1/b3/1da1b36941570b2cc18ce517c655bb38.png"
+            alt="Logo"
+          />
         </a>
       </div>
       <LinksContainer>
