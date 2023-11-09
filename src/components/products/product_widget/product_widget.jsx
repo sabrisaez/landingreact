@@ -1,7 +1,12 @@
 import React from "react";
 import { products } from "../../../data/products";
 import { ProductCard } from "../product_card/product_card";
-import { ProductosContainer, ProductosWrapper } from "./styles";
+import {
+  BotonesContainer,
+  ProductosContainer,
+  ProductosWrapper,
+} from "./styles";
+import { Button } from "../../button/button";
 
 export const ProductWidget = () => {
   return (
@@ -12,10 +17,10 @@ export const ProductWidget = () => {
           <ProductCard key={product.id} {...product} />
         ))}
       </ProductosContainer>
-      <div>
-        <button>Ver más</button>
-        <button>Ver menos</button>
-      </div>
+      <BotonesContainer>
+        <Button>Ver más</Button>
+        <Button>Ver menos</Button>
+      </BotonesContainer>
     </ProductosWrapper>
   );
 };

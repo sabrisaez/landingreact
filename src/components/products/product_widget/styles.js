@@ -23,3 +23,10 @@ export const ProductosContainer = styled.div`
   max-width: 1300px;
   padding: 1rem 0;
 `;
+
+export const BotonesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+`;
