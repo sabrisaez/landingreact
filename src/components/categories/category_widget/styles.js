@@ -18,7 +18,7 @@ export const CategoriasContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   user-select: none;
   @media (max-width: 768px) {
     padding-top: 30px;

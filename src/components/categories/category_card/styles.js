@@ -5,13 +5,17 @@ export const CardCategoria = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+
   width: 150px;
-  padding: 2rem 0.5rem;
-  background-color: ${({ selected }) =>
-    selected ? "var(--orange-bg)" : "var(--gray-bg)"};
+  padding: 1rem 0.2rem;
+  background-color: ${({ selected }) => (selected ? "#7aa399" : "#aee9d1")};
   border-radius: 15px;
   cursor: pointer;
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
   h2 {
     font-size: 1rem;
   }
@@ -29,6 +33,6 @@ export const CardCategoria = styled(motion.div)`
 export const BorderDecoration = styled.div`
   height: 5px;
   width: 30%;
-  background: var(--btn-gradient);
+  background: #7fa37a;
   border-radius: 15px;
 `;
