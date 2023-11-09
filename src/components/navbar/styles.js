@@ -70,3 +70,8 @@ export const UserImage = styled.img`
   border-radius: 100px;
   cursor: pointer;
 `;
+export const SpanStyled = styled.span`
+  &:hover {
+    text-decoration: ;
+  }
+`;
