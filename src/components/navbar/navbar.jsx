@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaHome, FaUser, FaHeart } from "react-icons/fa";
+import { FaHome, FaUser, FaHeart, FaShoppingBasket } from "react-icons/fa";
 import {
+  Cart,
   HomeContainer,
   LinkContainer,
   LinksContainer,
@@ -41,6 +42,9 @@ export const Navbar = () => {
             </UserContainer>
           </UserNav>
         </HomeContainer>
+        <Cart>
+          <FaShoppingBasket />
+        </Cart>
       </LinksContainer>
     </NavbarContainer>
   );

@@ -62,7 +62,6 @@ export const MenuContainer = styled(LinkContainer)`
   align-items: center;
   font-size: 2rem;
   cursor: pointer;
-  padding-right: 20px;
   @media (max-width: 768px) {
     display: flex;
   }
@@ -92,4 +91,12 @@ export const SpanStyled = styled.span`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const Cart = styled(LinkContainer)`
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 20px;
 `;
