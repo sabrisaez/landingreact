@@ -36,8 +36,9 @@ export const Footer = () => {
           <a href="/#">Soporte</a>
         </FooterLinks>
         <Contact>
-          <h2>Ubicación</h2>
+          <h2>Contacto</h2>
           <span>Galería Bond Street - Av. Sta. Fe 1670, local XX</span>
+          <span>Teléfono: 11 6666 6666</span>
         </Contact>
       </FooterLinksContainer>
 

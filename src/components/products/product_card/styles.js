@@ -22,6 +22,5 @@ export const ProductoCard = styled.div`
   }
   @media (max-width: 768px) {
     width: 250px;
-    text-align: left;
   }
 `;
