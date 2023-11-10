@@ -21,7 +21,6 @@ export const FooterLinksContainer = styled.div`
 export const SocialMedia = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
   text-align: left;
 `;
 
@@ -37,7 +36,6 @@ export const FooterLinks = styled.div`
 export const Contact = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
   text-align: left;
   @media (max-width: 768px) {
     margin-bottom: 20px;
