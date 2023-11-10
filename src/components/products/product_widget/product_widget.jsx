@@ -11,7 +11,7 @@ import { Button } from "../../button/button";
 export const ProductWidget = () => {
   return (
     <ProductosWrapper>
-      <h2>Nuestros productos</h2>
+      <h2>Store</h2>
       <ProductosContainer>
         {products.map((product) => (
           <ProductCard key={product.id} {...product} />

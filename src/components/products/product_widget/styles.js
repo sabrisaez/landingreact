@@ -7,6 +7,9 @@ export const ProductosWrapper = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 15px auto;
+  h2 {
+    color: #7aa399;
+  }
   @media (max-width: 768px) {
     padding-top: 30px;
     text-align: center;
