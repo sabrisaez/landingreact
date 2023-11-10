@@ -10,9 +10,10 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterLinksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, 400px);
+  row-gap: 3.5rem;
 `;
 
 export const SocialMedia = styled.div`
@@ -24,13 +25,15 @@ export const SocialMedia = styled.div`
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  text-align: left;
 `;
 
 export const Disclaimer = styled.div`
   background-color: #7fa37a;
+  width: 100%;
   p {
     color: white;
     font-weight: 500;
+    text-align: center;
   }
 `;

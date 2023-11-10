@@ -14,10 +14,17 @@ export const Footer = () => {
       <FooterLinksContainer>
         <SocialMedia>
           <h2>Redes sociales</h2>
-          <FaInstagram /> @kuromiwickedstore
-          <FaTiktok />
-          @kuromiwickedstore
-          <FaFacebook /> Kuromi's wicked dreams Store
+          <div>
+            {" "}
+            <FaInstagram /> @kuromiwickedstore
+          </div>
+          <div>
+            <FaTiktok />
+            @kuromiwickedstore
+          </div>
+          <div>
+            <FaFacebook /> Kuromi's wicked dreams Store
+          </div>
         </SocialMedia>
         <FooterLinks>
           <h2>Links</h2>
