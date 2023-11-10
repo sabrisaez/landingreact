@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Contact,
   Disclaimer,
   FooterLinks,
   FooterLinksContainer,
@@ -34,10 +35,10 @@ export const Footer = () => {
           <a href="/#">Trabajá con nosotros</a>
           <a href="/#">Soporte</a>
         </FooterLinks>
-        <div>
+        <Contact>
           <h2>Ubicación</h2>
           <span>Galería Bond Street - Av. Sta. Fe 1670, local XX</span>
-        </div>
+        </Contact>
       </FooterLinksContainer>
 
       <Disclaimer>

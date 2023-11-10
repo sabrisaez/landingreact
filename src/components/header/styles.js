@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 10px;
   h1 {
     margin-bottom: 2rem;
   }

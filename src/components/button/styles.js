@@ -17,4 +17,7 @@ export const StyledButton = styled.div`
     cursor: not-allowed;
     opacity: 0.5%;
   }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;

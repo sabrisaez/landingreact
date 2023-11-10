@@ -9,8 +9,11 @@ export const NavbarContainer = styled.div`
   padding: 0 2rem;
   border-radius: 20px;
   margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   @media (max-width: 768px) {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
   img {
     width: 100px;
@@ -59,6 +62,7 @@ export const MenuContainer = styled(LinkContainer)`
   align-items: center;
   font-size: 2rem;
   cursor: pointer;
+  padding-right: 20px;
   @media (max-width: 768px) {
     display: flex;
   }
