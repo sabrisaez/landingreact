@@ -1,11 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import { HomeScreen } from "./screens/home/home_screen";
+import { Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <HomeScreen />;
+  return (
+    <>
+      <HomeScreen />;
+    </>
+  );
 }
 
 export default App;

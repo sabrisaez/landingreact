@@ -12,6 +12,9 @@ import {
   UserContainer,
   UserNav,
 } from "./styles";
+import { Toggle } from "../toggle/toggle";
+import { NavbarContext } from "../../context/navbarContext";
+
 export const Navbar = () => {
   return (
     <NavbarContainer>
@@ -25,7 +28,9 @@ export const Navbar = () => {
       </div>
       <LinksContainer>
         <MenuContainer>
-          <FaHeart />
+          <Toggle>
+            <FaHeart />
+          </Toggle>
         </MenuContainer>
         <HomeContainer>
           <motion.div whileTap={{ scale: 0.97 }}>
