@@ -1,12 +1,13 @@
-import { useState } from "react";
 import "./App.css";
 import { HomeScreen } from "./screens/home/home_screen";
-import { Routes } from "react-router-dom";
+import { ContainerRoutes } from "./routes/routes";
 
 function App() {
   return (
     <>
-      <HomeScreen />;
+      <ContainerRoutes>
+        <HomeScreen />;
+      </ContainerRoutes>
     </>
   );
 }

@@ -100,3 +100,11 @@ export const Cart = styled(LinkContainer)`
   cursor: pointer;
   padding-right: 20px;
 `;
+
+export const LinksNavbar = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 20px;
+`;

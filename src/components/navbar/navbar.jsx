@@ -6,6 +6,7 @@ import {
   HomeContainer,
   LinkContainer,
   LinksContainer,
+  LinksNavbar,
   MenuContainer,
   NavbarContainer,
   SpanStyled,
@@ -14,6 +15,7 @@ import {
 } from "./styles";
 import { Toggle } from "../toggle/toggle";
 import { NavbarContext } from "../../context/navbarContext";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -46,6 +48,28 @@ export const Navbar = () => {
               <FaUser />
             </UserContainer>
           </UserNav>
+          <LinksNavbar>
+            <li>
+              <Link to="/" onClick={() => menuValue.menuCerrar()}>
+                INICIO
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => menuValue.menuCerrar()}>
+                NOSOTROS
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" onClick={() => menuValue.menuCerrar()}>
+                PRODUCTOS
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => menuValue.menuCerrar()}>
+                CONTACTO
+              </Link>
+            </li>
+          </LinksNavbar>
         </HomeContainer>
         <Cart>
           <FaShoppingBasket />
