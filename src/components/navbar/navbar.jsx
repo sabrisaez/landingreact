@@ -10,6 +10,7 @@ import {
   MenuContainer,
   NavbarContainer,
   SpanStyled,
+  StyledLink,
   UserContainer,
   UserNav,
 } from "./styles";
@@ -38,35 +39,29 @@ export const Navbar = () => {
           <Link to="/" onClick={() => menuValue.menuCerrar()}>
             <FaHome />
           </Link>
-          <LinksNavbar>
-            <li>
-              <Link to="/" onClick={() => menuValue.menuCerrar()}>
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => menuValue.menuCerrar()}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" onClick={() => menuValue.menuCerrar()}>
-                Productos
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => menuValue.menuCerrar()}>
-                Contacto
-              </Link>
-            </li>
-          </LinksNavbar>
-          <UserNav>
-            <UserContainer>
-              <SpanStyled>Iniciar sesión</SpanStyled>
-              <FaUser />
-            </UserContainer>
-          </UserNav>
         </HomeContainer>
+        <LinksNavbar>
+          <li>
+            <StyledLink to="/about" onClick={() => menuValue.menuCerrar()}>
+              About Us
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/products" onClick={() => menuValue.menuCerrar()}>
+              Productos
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/contact" onClick={() => menuValue.menuCerrar()}>
+              Contacto
+            </StyledLink>
+          </li>
+        </LinksNavbar>
+        <UserNav>
+          <UserContainer>
+            <FaUser />
+          </UserContainer>
+        </UserNav>
         <Cart>
           <FaShoppingBasket />
         </Cart>

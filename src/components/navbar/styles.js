@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   height: 100px;
@@ -26,17 +27,6 @@ export const LinksContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
-  a {
-    padding: 1rem 1.5rem;
-    &:first-child {
-      background: #7aa399;
-      border-radius: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-    }
-  }
 `;
 export const LinkContainer = styled.div`
   font-size: 1.2rem;
@@ -50,8 +40,18 @@ export const UserContainer = styled.div`
 
 export const HomeContainer = styled(LinkContainer)`
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
+  a {
+    padding: 1rem 1.5rem;
+    &:first-of-type {
+      background: #7aa399;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
   @media (max-width: 768px) {
     display: none;
   }
@@ -106,5 +106,12 @@ export const LinksNavbar = styled.div`
   align-items: center;
   font-size: 1rem;
   cursor: pointer;
-  padding-right: 20px;
+  gap: 20px;
+`;
+
+export const StyledLink = styled(Link)`
+  /* Estilos personalizados para el componente Link */
+  color: brown; /* Cambia el color del texto */
+  text-decoration: none; /* Elimina la decoración de texto por defecto (subrayado) */
+  font-weight: bold;
 `;
