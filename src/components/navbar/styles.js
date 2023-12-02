@@ -104,7 +104,7 @@ export const Cart = styled(LinkContainer)`
 export const LinksNavbar = styled.div`
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   padding-right: 20px;
 `;

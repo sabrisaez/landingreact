@@ -35,41 +35,37 @@ export const Navbar = () => {
           </Toggle>
         </MenuContainer>
         <HomeContainer>
-          <motion.div whileTap={{ scale: 0.97 }}>
-            <a href="/#">
-              <LinkContainer home={true}></LinkContainer>
-              <FaHome />
-              Home
-            </a>
-          </motion.div>
+          <Link to="/" onClick={() => menuValue.menuCerrar()}>
+            <FaHome />
+          </Link>
+          <LinksNavbar>
+            <li>
+              <Link to="/" onClick={() => menuValue.menuCerrar()}>
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => menuValue.menuCerrar()}>
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" onClick={() => menuValue.menuCerrar()}>
+                Productos
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => menuValue.menuCerrar()}>
+                Contacto
+              </Link>
+            </li>
+          </LinksNavbar>
           <UserNav>
             <UserContainer>
               <SpanStyled>Iniciar sesión</SpanStyled>
               <FaUser />
             </UserContainer>
           </UserNav>
-          <LinksNavbar>
-            <li>
-              <Link to="/" onClick={() => menuValue.menuCerrar()}>
-                INICIO
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => menuValue.menuCerrar()}>
-                NOSOTROS
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" onClick={() => menuValue.menuCerrar()}>
-                PRODUCTOS
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => menuValue.menuCerrar()}>
-                CONTACTO
-              </Link>
-            </li>
-          </LinksNavbar>
         </HomeContainer>
         <Cart>
           <FaShoppingBasket />
