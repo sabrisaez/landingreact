@@ -8,14 +8,40 @@ import { Contactpage } from "../pages/contact/contactpage";
 export const ContainerRoutes = () => {
   return (
     <BrowserRouter>
-      <HomeLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/contact" element={<Contactpage />} />
-        </Routes>
-      </HomeLayout>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomeLayout>
+              <Home />
+            </HomeLayout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <HomeLayout>
+              <AboutUs />
+            </HomeLayout>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <HomeLayout>
+              <ProductsPage />
+            </HomeLayout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <HomeLayout>
+              <Contactpage />
+            </HomeLayout>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 };
