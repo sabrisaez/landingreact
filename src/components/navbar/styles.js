@@ -110,8 +110,7 @@ export const LinksNavbar = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  /* Estilos personalizados para el componente Link */
-  color: brown; /* Cambia el color del texto */
+  color: white; /* Cambia el color del texto */
   text-decoration: none; /* Elimina la decoración de texto por defecto (subrayado) */
   font-weight: bold;
 `;
