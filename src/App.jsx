@@ -1,7 +1,6 @@
 import "./App.css";
 import { HomeScreen } from "./screens/home/home_screen";
 import { ContainerRoutes } from "./routes/routes";
-import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import { NavbarProvider } from "./context/navbarContext";
 
 function App() {
@@ -9,9 +8,7 @@ function App() {
     <>
       <NavbarProvider>
         <ContainerRoutes>
-          <BrowserRouter>
-            <HomeScreen />;
-          </BrowserRouter>
+          <HomeScreen />;
         </ContainerRoutes>
       </NavbarProvider>
     </>
