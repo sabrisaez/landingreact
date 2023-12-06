@@ -1,21 +1,17 @@
-import { motion } from "framer-motion";
 import React from "react";
 import { FaHome, FaUser, FaHeart, FaShoppingBasket } from "react-icons/fa";
 import {
   Cart,
   HomeContainer,
-  LinkContainer,
   LinksContainer,
   LinksNavbar,
   MenuContainer,
   NavbarContainer,
-  SpanStyled,
   StyledLink,
   UserContainer,
   UserNav,
 } from "./styles";
 import { Toggle } from "../toggle/toggle";
-import { NavbarContext } from "../../context/navbarContext";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -36,25 +32,19 @@ export const Navbar = () => {
           </Toggle>
         </MenuContainer>
         <HomeContainer>
-          <Link to="/" onClick={() => menuValue.menuCerrar()}>
+          <Link to="/">
             <FaHome />
           </Link>
         </HomeContainer>
         <LinksNavbar>
           <li>
-            <StyledLink to="/about" onClick={() => menuValue.menuCerrar()}>
-              About Us
-            </StyledLink>
+            <StyledLink to="/about">About Us</StyledLink>
           </li>
           <li>
-            <StyledLink to="/products" onClick={() => menuValue.menuCerrar()}>
-              Productos
-            </StyledLink>
+            <StyledLink to="/products">Productos</StyledLink>
           </li>
           <li>
-            <StyledLink to="/contact" onClick={() => menuValue.menuCerrar()}>
-              Contacto
-            </StyledLink>
+            <StyledLink to="/contact">Contacto</StyledLink>
           </li>
         </LinksNavbar>
         <UserNav>
