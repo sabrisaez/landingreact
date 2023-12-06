@@ -16,7 +16,7 @@ export const AboutUs = () => {
     <div>
       <Navbar />
       <HomeLayout></HomeLayout>
-      <AboutTittle> ♡ ABOUT US ♡ </AboutTittle>
+      <AboutTittle> ♡ About Us ♡ </AboutTittle>
       <Abouth2>Kuromi's wicked dreams</Abouth2>
       <AboutContainer>
         <AboutText>
