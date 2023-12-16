@@ -1,5 +1,5 @@
 import { MenuNavbar } from "../menunavbar/menunavbar";
-import Icon from "../Icon/Icon";
+import Icon from "../icon/icon";
 import { StyledHeader } from "./styles";
 
 export const Navbar = () => {
