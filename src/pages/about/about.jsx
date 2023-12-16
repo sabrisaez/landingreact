@@ -8,8 +8,9 @@ import {
   AboutText,
   AboutImg,
   Abouth2,
-  StyledLinkAbout,
 } from "./styles";
+import { Button } from "../../components/button/button";
+import { Link } from "react-router-dom";
 
 export const AboutUs = () => {
   return (
@@ -40,9 +41,9 @@ export const AboutUs = () => {
             ¡Explora nuestro catálogo y sumérgete en el encantador mundo de
             Kuromi en Argentina!
           </span>
-          <StyledLinkAbout to="/products">
-            <button>Ver Productos</button>
-          </StyledLinkAbout>
+          <Link to="/products">
+            <Button>Ver productos</Button>
+          </Link>
         </AboutText>
         <AboutImg>
           <img

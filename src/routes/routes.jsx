@@ -4,12 +4,12 @@ import { Home } from "../pages/home/home";
 import { AboutUs } from "../pages/about/about";
 import { ProductsPage } from "../pages/products/productspage";
 import { Contactpage } from "../pages/contact/contactpage";
-import { NavbarProvider } from "../context/navbarContext";
+import { MenuProvider } from "../context/navbarContext";
 
 export const ContainerRoutes = () => {
   return (
     <BrowserRouter>
-      <NavbarProvider>
+      <MenuProvider>
         <HomeLayout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ export const ContainerRoutes = () => {
             <Route path="/contact" element={<Contactpage />} />
           </Routes>
         </HomeLayout>
-      </NavbarProvider>
+      </MenuProvider>
     </BrowserRouter>
   );
 };

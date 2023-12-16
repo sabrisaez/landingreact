@@ -1,19 +1,22 @@
-import React, { createContext, useState } from "react";
+import { useState, createContext } from "react";
 
-const NavbarContext = createContext();
+export const MenuContext = createContext();
 
-const NavbarProvider = ({ children }) => {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsNavbarOpen(!isNavbarOpen);
+// eslint-disable-next-line react/prop-types
+export const MenuProvider = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <NavbarContext.Provider value={{ isNavbarOpen, toggleNavbar }}>
+    <MenuContext.Provider
+      value={{
+        isMenuOpen: isOpen,
+        toggleMenu: handleOpen,
+      }}
+    >
       {children}
-    </NavbarContext.Provider>
+    </MenuContext.Provider>
   );
 };
-
-export { NavbarProvider, NavbarContext };

@@ -4,6 +4,7 @@ import {
   HeaderTextContainer,
 } from "./styles";
 import { Button } from "../button/button";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -12,7 +13,9 @@ export const Header = () => {
         <h1>La magia de Kuromi</h1>
         <h2>ha llegado.</h2>
         <p>Con un toque de travesura y un toque de encanto oscuro.</p>
-        <Button>Ver más</Button>
+        <Link to="/products">
+          <Button>Ver más</Button>
+        </Link>
       </HeaderTextContainer>
       <HeaderImageContainter>
         <img
